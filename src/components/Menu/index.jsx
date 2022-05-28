@@ -1,11 +1,14 @@
 import P from 'prop-types';
 import * as Styled from './styles';
 import React from 'react';
+import { SectionContainer } from '../SectionContainer';
 
 export const Menu = ({ children }) => {
   return (
     <Styled.Container>
-      <h1>{children}</h1>
+      <SectionContainer>
+        <h1>{children}</h1>
+      </SectionContainer>
     </Styled.Container>
   );
 };

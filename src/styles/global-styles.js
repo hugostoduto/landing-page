@@ -13,7 +13,6 @@ ${({ theme }) => css`
     font-size: 62.5%;
   }
   body {
-    background: yellow;
     background: ${theme.colors.mainBg};
     font-family: ${theme.fonts.family.primaryFont};
   }
