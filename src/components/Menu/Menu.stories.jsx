@@ -1,11 +1,18 @@
 import { Menu } from '.';
 import React from 'react';
 
+import mock from '../NavLinks/mock';
+
 export default {
   title: 'Menu',
   component: Menu,
   args: {
-    children: 'Menu',
+    links: mock,
+    logoData: {
+      text: 'Logo',
+      srcImg: '',
+      link: '',
+    },
   },
   argTypes: {
     children: { type: 'string' },
