@@ -2,8 +2,15 @@
 import styled, { css } from 'styled-components';
 import { Container as SectionContainer } from '../SectionContainer/styles';
 import { Title as Heading } from '../Heading/styles';
+import { theme } from '../../styles/theme';
+
+const menuOpen = (theme) => css`
+  visibility: visible;
+  opacity: 1;
+`;
+
 export const Container = styled.div`
-  ${({ theme }) => css`
+  ${({ theme, isOpen }) => css`
     position: fixed;
     z-index: 5;
     top: 0;
@@ -14,6 +21,7 @@ export const Container = styled.div`
     height: 100%;
     border-bottom: 1px solid ${theme.colors.mediumGray};
     background-color: ${theme.colors.white};
+    transition: all 0.3s ease-in-out;
 
     > ${SectionContainer} {
       padding-top: 0;
@@ -24,7 +32,10 @@ export const Container = styled.div`
       margin-top: 0;
     }
     @media ${theme.media.mobile} {
+      visibility: hidden;
+      opacity: 0;
       height: 100vh;
+      ${isOpen && menuOpen(theme)};
       > ${SectionContainer} {
         display: grid;
         grid-template-columns: 1fr;
@@ -57,6 +68,7 @@ export const MenuContainer = styled.div`
 export const Button = styled.button`
   ${({ theme }) => css`
     z-index: 6;
+    cursor: pointer;
     position: fixed;
     top: 2rem;
     right: 2rem;
