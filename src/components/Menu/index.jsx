@@ -5,17 +5,25 @@ import React from 'react';
 import { SectionContainer } from '../SectionContainer';
 import { Logo } from '../Logo';
 import { NavLinks } from '../NavLinks';
+import { Menu as MenuIcon } from '@styled-icons/boxicons-regular/Menu';
+import { CloseOutline } from '@styled-icons/evaicons-outline/CloseOutline';
 
 export const Menu = ({ links = [], logoData }) => {
+  const [isOpen, setIsOpen] = React.useState(false);
   return (
-    <Styled.Container>
-      <SectionContainer>
-        <Styled.MenuContainer>
-          <Logo {...logoData} />
-          <NavLinks links={links} />
-        </Styled.MenuContainer>
-      </SectionContainer>
-    </Styled.Container>
+    <>
+      <Styled.Button>
+        <MenuIcon />
+      </Styled.Button>
+      <Styled.Container isOpen={isOpen}>
+        <SectionContainer>
+          <Styled.MenuContainer>
+            <Logo {...logoData} />
+            <NavLinks links={links} />
+          </Styled.MenuContainer>
+        </SectionContainer>
+      </Styled.Container>
+    </>
   );
 };
 

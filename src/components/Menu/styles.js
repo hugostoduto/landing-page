@@ -55,5 +55,25 @@ export const MenuContainer = styled.div`
   `}
 `;
 export const Button = styled.button`
-  ${({ theme }) => css``}
+  ${({ theme }) => css`
+    z-index: 6;
+    position: fixed;
+    top: 2rem;
+    right: 2rem;
+    width: 3rem;
+    height: 3rem;
+    background-color: ${theme.colors.primaryColor};
+    color: ${theme.colors.white};
+    display: none;
+    @media ${theme.media.mobile} {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    border: none;
+    > svg {
+      width: 2.5rem;
+      height: 2.5rem;
+    }
+  `}
 `;
