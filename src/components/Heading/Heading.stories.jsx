@@ -6,7 +6,7 @@ export default {
   title: 'Heading',
   component: Heading,
   args: {
-    children: 'Heading',
+    children: 'Hugo',
     colorDark: true,
     as: 'h1',
     size: 'huge',
