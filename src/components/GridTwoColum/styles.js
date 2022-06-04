@@ -8,20 +8,19 @@ export const Container = styled.div`
     grid-template-columns: 1fr 2fr;
     align-items: center;
     gap: ${theme.spacings.large};
-    @media ${theme.media.lteMedium} {
+    @media ${theme.media.mobile} {
       grid-template-columns: 1fr;
       text-align: center;
     }
     ${Title} {
       margin-bottom: ${theme.spacings.xlarge};
-      color: ${background ? theme.colors.white : theme.colors.primaryColor};
     }
   `}
 `;
 
 export const TextContainer = styled.div`
   ${({ theme }) => css`
-    @media ${theme.media.lteMedium} {
+    @media ${theme.media.mobile} {
       margin-bottom: ${theme.spacings.large};
     }
   `}

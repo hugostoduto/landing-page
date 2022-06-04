@@ -14,7 +14,7 @@ export default {
     title: { type: 'string' },
     text: { type: 'string' },
     srcImg: { type: 'string' },
-    background: { type: 'bool' },
+    background: { type: `boolean` },
   },
 };
 
