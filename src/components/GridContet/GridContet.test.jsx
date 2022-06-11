@@ -1,11 +1,12 @@
+/* eslint-disable no-undef */
 import { screen } from '@testing-library/react';
 import { renderTheme } from '../../styles/render-theme';
-import { GridContet } from '.';
+import { GridContent } from '.';
 import React from 'react';
 
-describe('<GridContet />', () => {
+describe('<GridContent />', () => {
   it('should render', () => {
-    renderTheme(<GridContet>Children</GridContet>);
+    renderTheme(<GridContent>Children</GridContent>);
     expect(screen.getByRole('heading')).toBeInTheDocument();
   });
 });

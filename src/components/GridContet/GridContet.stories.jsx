@@ -1,10 +1,11 @@
-import { GridContet } from '.';
+/* eslint-disable react/react-in-jsx-scope */
+import { GridContent } from '.';
 
 export default {
-  title: 'GridContet',
-  component: GridContet,
+  title: 'GridContent',
+  component: GridContent,
   args: {
-    children: 'GridContet',
+    children: 'GridContent',
   },
   argTypes: {
     children: { type: 'string' },
@@ -14,7 +15,7 @@ export default {
 export const Template = (args) => {
   return (
     <div>
-      <GridContet {...args} />
+      <GridContent {...args} />
     </div>
   );
 };
