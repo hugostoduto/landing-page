@@ -29,3 +29,4 @@ GridTwoColum.propTypes = {
   srcImg: P.string.isRequired,
   background: P.bool,
 };
+<></>;
