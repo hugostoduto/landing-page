@@ -1,15 +1,10 @@
 /* eslint-disable react/react-in-jsx-scope */
 import { GridContent } from '.';
-
+import mock from './mock';
 export default {
   title: 'GridContent',
   component: GridContent,
-  args: {
-    children: 'GridContent',
-  },
-  argTypes: {
-    children: { type: 'string' },
-  },
+  args: mock,
 };
 
 export const Template = (args) => {
