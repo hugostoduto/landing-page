@@ -1,20 +1,23 @@
-/* eslint-disable no-unreachable */
 import P from 'prop-types';
-import * as Styled from './styles';
 import React from 'react';
+import { Heading } from '../Heading';
 import { SectionBackground } from '../SectionBackground';
 import { TextComponent } from '../TextComponent';
-import { Heading } from '../Heading';
+import * as Styled from './styles';
+
 export const GridContent = ({ title, html, background = false }) => {
-  return;
-  <SectionBackground>
-    <Styled.Container>
-      <Heading uppercase colorDark={!background}>
-        {title}
-      </Heading>
-      <TextComponent>{html}</TextComponent>
-    </Styled.Container>
-  </SectionBackground>;
+  return (
+    <SectionBackground background={background}>
+      <Styled.Container>
+        <Heading uppercase colorDark={!background}>
+          {title}
+        </Heading>
+        <Styled.Html>
+          <TextComponent>{html}</TextComponent>
+        </Styled.Html>
+      </Styled.Container>
+    </SectionBackground>
+  );
 };
 
 GridContent.propTypes = {
