@@ -1,6 +1,8 @@
-/* eslint-disable react/react-in-jsx-scope */
-import { GridContent } from '.';
+import GridContent from './index';
+import React from 'react';
+
 import mock from './mock';
+
 export default {
   title: 'GridContent',
   component: GridContent,
