@@ -4,6 +4,7 @@ import { SectionBackground } from '../SectionBackground';
 import { TextComponent } from '../TextComponent';
 import * as Styled from './styles';
 import React from 'react';
+
 export const GridContent = ({ title, html, background = false }) => {
   return (
     <SectionBackground background={background}>
