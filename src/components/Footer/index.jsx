@@ -11,5 +11,5 @@ export const Footer = ({ children }) => {
 };
 
 Footer.propTypes = {
-  children: P.node.isRequired,
+  children: P.string.isRequired,
 };
