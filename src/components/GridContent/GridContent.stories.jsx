@@ -1,5 +1,5 @@
-import GridContent from './index';
-import React from 'react';
+/* eslint-disable react/react-in-jsx-scope */
+import { GridContent } from '.';
 
 import mock from './mock';
 
