@@ -1,6 +1,5 @@
-import GridContent from './index';
+import { GridContent } from '.';
 import React from 'react';
-
 import mock from './mock';
 
 export default {
